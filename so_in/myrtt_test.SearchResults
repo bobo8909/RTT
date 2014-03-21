@@ -1,0 +1,9 @@
+---- stm32f1xx_sdio_init Matches (5 in 2 files) ----
+Board.c (e:\myrtt\mytest\apps):		extern rt_int32_t stm32f1xx_sdio_init(void);
+Board.c (e:\myrtt\mytest\apps):		stm32f1xx_sdio_init();
+myrtt_test.SearchResults (e:\myrtt\so_in):---- stm32f1xx_sdio_init Matches (#count#) ----
+myrtt_test.SearchResults (e:\myrtt\so_in):Board.c (e:\myrtt\mytest\apps):		extern rt_int32_t stm32f1xx_sdio_init(void);
+myrtt_test.SearchResults (e:\myrtt\so_in):Board.c (e:\myrtt\mytest\apps):		stm32f1xx_sdio_init();
+---- stm32f1xx_sdio_init Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+E:\myrtt\mytest\project\JLinkLog.txt : File could not be opened.
