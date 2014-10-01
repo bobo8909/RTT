@@ -15,6 +15,7 @@
 #include "components.h"
 
 #include "led.h"
+#include "ds18b20.h"
 extern void telnet_srv(void);
 
 extern struct netif * netif_list;
@@ -149,7 +150,7 @@ rt_kprintf(" link ok \r\n");
 #endif /* RT_USING_USB_DEVICE */	
 
 //	telnet_srv();
-	tcpclient("192.168.1.103",4663);
+//	tcpclient("192.168.1.103",4663);
 
 }
 
@@ -166,13 +167,19 @@ int rt_application_init()
 	if (init_thread != RT_NULL)
 		rt_thread_startup(init_thread);
 
-	init_thread =rt_thread_create("init",
+	init_thread =rt_thread_create("led",
 								led_thread_entry,RT_NULL,
 								1024,4,21);
 
 	if (init_thread != RT_NULL)
 		rt_thread_startup(init_thread);
-  
+
+	init_thread=rt_thread_create("DS18B20",DS18B20_thread_entry,RT_NULL,512,6,18);
+	if (init_thread !=RT_NULL)
+		rt_thread_startup(init_thread);
+
+  	init_thread=rt_thread_create("uartprint",UartPrint_thread_entry,RT_NULL,512,8,21);
+		rt_thread_startup(init_thread);
 //	demo_thread_creat();
 	return 0;
 }

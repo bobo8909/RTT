@@ -4,6 +4,9 @@ del /Q project\*.bak
 del /Q project\*.dep
 del /Q project\*.Obj
 del /Q project\*.List
+del .\*.d
+del .\*.o
+del .\*.crf
 
 
 

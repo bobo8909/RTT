@@ -465,6 +465,11 @@
               <FileType>1</FileType>
               <FilePath>..\drivers\dm9000a.c</FilePath>
             </File>
+            <File>
+              <FileName>ds18b20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\ds18b20.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

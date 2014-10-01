@@ -42,7 +42,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\obj\</OutputDirectory>
+          <OutputDirectory>..\</OutputDirectory>
           <OutputName>rtt</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
