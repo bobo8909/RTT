@@ -179,6 +179,7 @@ int rt_application_init()
 		rt_thread_startup(init_thread);
 
   	init_thread=rt_thread_create("uartprint",UartPrint_thread_entry,RT_NULL,512,8,21);
+	if (init_thread !=RT_NULL)
 		rt_thread_startup(init_thread);
 //	demo_thread_creat();
 	return 0;
